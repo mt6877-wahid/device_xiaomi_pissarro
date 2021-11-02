@@ -115,6 +115,8 @@ PRODUCT_PACKAGES += \
 
 # Dex2oat
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
     dalvik.vm.boot-dex2oat-threads=8 \
