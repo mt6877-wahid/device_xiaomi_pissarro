@@ -80,6 +80,8 @@ on init
     write /dev/stune/top-app/schedtune.boost 1
 
 on enable-low-power
+    write /sys/devices/system/cpu/eas/enable 1
+
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
