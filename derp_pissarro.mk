@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/pissarro/device.mk)
 
 # Inherit some common DerpFest stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
+TARGET_USES_PICO_GAPPS := true
 
 #Derpfest Official
 DERP_BUILDTYPE := Official
