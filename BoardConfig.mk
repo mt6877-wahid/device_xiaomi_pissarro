@@ -81,6 +81,9 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/pissarro
 TARGET_KERNEL_BUILD_USER := NoVA
 TARGET_KERNEL_BUILD_HOST := Abdul7852
 
+# MiuiCamera
+include vendor/xiaomi/miuicamera-pissarro/SEPolicy-pissarro.mk
+
 # NFC
 DEVICE_MANIFEST_SKUS += nfc
 DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml

@@ -199,6 +199,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# MiuiCamera
+PRODUCT_COPY_FILES += \
+    $(call inherit-product-if-exists, vendor/xiaomi/miuicamera-pissarro/MiuiCamera-pissarro.mk)
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
