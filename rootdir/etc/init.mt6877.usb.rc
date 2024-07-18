@@ -150,7 +150,7 @@ on boot
     # for usb otg sdcard hot plug detection
     write /sys/module/block/parameters/events_dfl_poll_msecs 1000
 
-    setprop sys.usb.controller "musb-hdrc"
+    setprop sys.usb.controller "usb0"
 
     # Set permissions for USB service
     chown root system /sys/class/typec/port0/power_role
